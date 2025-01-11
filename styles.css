@@ -1,0 +1,129 @@
+/* General Resets & Basic Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full height for the body */
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center; /* Center navigation items */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex-grow: 1; /* Allow main content to take up remaining space */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack image and text vertically */
+  height: 60vh; /* Adjust as needed */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
+}
+
+.hero-image {
+  width: 20vw; /* 20% of viewport width */
+  max-width: 200px; /* Optional: set a max width */
+  min-width: 100px; /* Optional: set a min width */
+  margin-bottom: 1.5rem; /* Add space below image */
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* About Page Specific Styles */
+.about {
+  margin: 2rem 0;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.8; /* Adds more line spacing */
+  margin-bottom: 1.5rem; /* Adds space between paragraphs */
+  text-align: justify; /* Full justification for paragraphs */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: auto; /* Pushes footer to the bottom */
+  padding: 1rem 0; /* Optional: adds padding for footer */
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: column; /* Keeps the vertical layout */
+  }
+
+  .hero-image {
+    margin-bottom: 1.5rem;
+  }
+}
