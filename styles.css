@@ -46,19 +46,20 @@ main {
   flex-grow: 1; /* Allow main content to take up remaining space */
 }
 
-/* Hero Section */
+/* Hero Section - Adjusted for Better Vertical Alignment */
 .hero {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Horizontally center the content */
+  align-items: flex-start; /* IMPORTANT: Align content towards the top */
   flex-direction: column; /* Stack image and text vertically */
-  height: 60vh; /* Adjust as needed */
+  height: 80vh; /* IMPORTANT: Adjust height to 80% of the viewport height */
+  padding-top: 5vh; /* IMPORTANT: Adds space from the top */
 }
 
 .hero-content {
   display: flex;
   flex-direction: column; /* Stack children vertically */
-  align-items: center;
+  align-items: center; /* Horizontally center the image and text */
 }
 
 .hero-image {
