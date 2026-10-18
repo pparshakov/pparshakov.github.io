@@ -79,7 +79,7 @@ main {
   object-fit: cover;
   object-position: 52% 10%;
   /* Frame the face and shoulders within the circle. */
-  transform: scale(1.4);
+  transform: translateX(-5%) scale(1.25);
   transform-origin: 52% 10%;
 }
 
