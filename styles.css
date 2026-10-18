@@ -66,14 +66,21 @@ main {
   width: 20vw; /* 20% of viewport width */
   max-width: 200px; /* Optional: set a max width */
   min-width: 100px; /* Optional: set a min width */
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
   margin-bottom: 1.5rem; /* Add space below image */
 }
 
 .hero-image img {
+  display: block;
   width: 100%;
-  height: auto;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  height: 100%;
+  object-fit: cover;
+  object-position: 52% 10%;
+  /* Frame the face and shoulders within the circle. */
+  transform: scale(1.4);
+  transform-origin: 52% 10%;
 }
 
 .hero-text {
